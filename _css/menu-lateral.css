@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+div#div-menu-lateral {
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.5);
+}
+
+
+ul.nav-expand-sm li:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+ul.nav-expand-sm li#fotoAlimentos {
+     background-size: 400px 400px;
+     background: white url("../_imagens/galeria-01.jpg") no-repeat 50% 50%;
+ }
+ul.nav-expand-sm li#fotoAlimentos:hover {
+    background-position: 0 0;
+    background-size: 200px 200px;
+}
+
+ul.nav-expand-sm li#fotoBebidas {
+    background-size: 400px 400px;
+    background: white url("../_imagens/galeria-02.jpg") no-repeat 50% 50%;
+}
+ul.nav-expand-sm li#fotoBebidas:hover {
+    background-position: 0 0;
+    background-size: 200px 200px;
+}
+
+ul.nav-expand-sm li#fotoCarnes {
+    background-size: 400px 400px;
+    background: white url("../_imagens/galeria-03.jpg") no-repeat 50% 50%;
+}
+ul.nav-expand-sm li#fotoCarnes:hover {
+    background-position: 0 0;
+    background-size: 200px 200px;
+}
+
+ul.nav-expand-sm li#fotoCondimentos {
+    background-size: 400px 400px;
+    background: white url("../_imagens/galeria-04.jpg") no-repeat 50% 50%;
+}
+ul.nav-expand-sm li#fotoCondimentos:hover {
+    background-position: 0 0;
+    background-size: 200px 200px
+}
+
+ul.nav-expand-sm li#fotoFrios {
+    background-size: 400px 400px;
+    background: white url("../_imagens/galeria-05.jpg") no-repeat 50% 50%;
+}
+ul.nav-expand-sm li#fotoFrios:hover {
+    background-position: 0 0;
+    background-size: 200px 200px;
+}
+
+ul.nav-expand-sm li#fotoFrutas:hover {
+    background-position: 0 0;
+    background-size: 200px 200px;
+}
+
+ul.nav-expand-sm li#fotoHigiene {
+    background-size: 400px 400px;
+    background: white url("../_imagens/galeria-04.jpg") no-repeat 50% 50%;
+}
+ul.nav-expand-sm li#fotoHigiene:hover {
+    background-position: 0 0;
+    background-size: 200px 200px;
+}
+
+ul.nav-expand-sm li#fotoPanificadora {
+    background-size: 400px 400px;
+    background: white url("../_imagens/galeria-05.jpg") no-repeat 50% 50%;
+}
+ul.nav-expand-sm li#fotoPanificadora:hover {
+    background-position: 0 0;
+    background-size: 200px 200px;
+}
+
+ul.nav-expand-sm li#fotoUtilidades {
+    background-size: 400px 400px;
+    background: white url("../_imagens/galeria-06.jpg") no-repeat 50% 50%;
+}
+ul.nav-expand-sm li#fotoUtilidades:hover {
+    background-position: 0 0;
+    background-size: 200px 200px;
+}
+
+@media screen and (max-width: 576px) {
+    ul.nav-expand-sm {
+        width: 100%;
+        margin-bottom: -10px;
+        padding: 2%;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    ul.nav-expand-sm li {
+        float: left;
+        width: 18%;
+        height: 40px;
+        margin: 1%;
+        border: 2px solid rgba(255,255,255,0.5);
+        background-color: white;
+        box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+        transition: all .5s ease-in;
+    }
+
+    ul.nav-expand-sm li a {
+        text-decoration: none;
+        font-size: 8pt;
+        position: absolute;
+        opacity: 1;
+        color: white;
+        text-shadow: 2px 2px 5px #000000;
+        padding: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    ul.nav-expand-sm li:hover a {
+        opacity: 1;
+        font-size: 7pt;
+        padding: 20% 25% 20% 25%;
+    }
+
+    ul.nav-expand-sm li#fotoFrutas {
+        background-size: 400px 400px;
+        background: white url("https://cdn.pixabay.com/photo/2018/04/26/05/16/market-3351156_1280.jpg") no-repeat 50% 50%;
+        margin-left: 11%;
+    }
+}
+
+
+@media screen and (min-width: 577px) {
+    ul.nav-expand-sm {
+        width: 100%;
+        margin-bottom: -10px;
+        padding: 2%;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    ul.nav-expand-sm li {
+        float: left;
+        width: 18%;
+        height: 60px;
+        margin: 1%;
+        border: 2px solid rgba(255,255,255,0.5);
+        background-color: white;
+        box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+        transition: all .5s ease-in;
+    }
+
+    ul.nav-expand-sm li a {
+        text-decoration: none;
+        position: absolute;
+        opacity: 1;
+        color: white;
+        text-shadow: 2px 2px 5px #000000;
+        padding: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    ul.nav-expand-sm li:hover a {
+        opacity: 1;
+        font-size: 10pt;
+        padding: 20% 25% 20% 25%;
+    }
+
+    ul.nav-expand-sm li#fotoFrutas {
+        background-size: 200px 200px;
+        background: white url("https://cdn.pixabay.com/photo/2018/04/26/05/16/market-3351156_1280.jpg") no-repeat 50% 50%;
+        margin-left: 11%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    ul.nav-expand-sm li:hover {
+        height: 70px;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    ul.nav-expand-sm {
+        color: rgba(255,255,255,.9);
+        text-shadow: 1px 1px 5px #000000;
+        position: relative;
+        padding: 0 0 5px 0;
+        overflow: hidden;
+        list-style: none;
+    }
+    ul.nav-expand-sm li {
+        width: 66.66%;
+        height: 40px;
+        margin-left: 16.66%;
+        margin-right: 16.66%;
+        border: 3px solid rgba(255,255,255,.7);
+        transition: all .5s ease-in;
+    }
+    ul.nav-expand-sm li a {
+        position: absolute;
+        opacity: 0;
+        color: white;
+        padding: 0;
+        text-shadow: 2px 2px 5px #000000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 12pt;
+        text-decoration: none;
+    }
+
+    ul.nav-expand-sm li:hover a {
+        opacity: 1;
+        font-size: 10pt;
+        padding: 10% 40% 10% 40%;
+    }
+
+    ul.nav-expand-sm li#fotoFrutas {
+        background-size: 200px 200px;
+        background: white url("https://cdn.pixabay.com/photo/2018/04/26/05/16/market-3351156_1280.jpg") no-repeat 50% 50%;
+        margin-left: 16.66%;
+        margin-right: 16.66%;
+    }
+}
