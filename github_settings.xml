@@ -1,0 +1,7 @@
+<application>
+  <component name="GithubSettings">
+    <option name="LOGIN" value="MarlosAugusto" />
+    <option name="HOST" value="https://github.com/MarlosAugusto/TrabalhoWeb1" />
+    <option name="AUTH_TYPE" value="BASIC" />
+  </component>
+</application>
