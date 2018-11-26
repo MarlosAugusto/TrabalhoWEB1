@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="_css/bootstrap.css">
     <link rel="stylesheet" href="_css/menu-lateral.css">
+    <link rel="stylesheet" href="_css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -63,15 +64,15 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center my-3">
-                <h1 class="display-3"> Seja bem vindo!</h1>
-                <p class="lead">Site exemplo para curso de Bootstrap 4.</p>
+                <img class="animated" src="_imagens/mercado-eletronico.png" alt="">
+                <p class="animated">Health is not about the weight you lose. But about the life you gain!</p>
             </div>
 
         </div>
     </div>
 
     <!----------------- carousel -------------------->
-    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+    <div id="carouselSite" class="carousel slide mx-md-5" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
             <li data-target="#carouselSite" data-slide-to="1"></li>
@@ -119,12 +120,12 @@
         </a>
     </div>
 
-    <!----------------- menu lateral -------------------->
+    <!----------------- menu lateral --------------------
     <div class="container-fluid">
         <div class="row">
             <div id="div-menu-lateral" class="col-md-3 col-lg-2 my-3 p-0">
                 <ul class="nav-expand-sm text-center ml-0 pb-4 pt-2 bg-gradient-purple-dark">
-                    <h6 class="mt-2 shadow-lg"><i class="fas fa-shopping-basket"></i> Seções</h6>
+                    <h6 class="mt-2 shadow-lg text-white"><i class="fas fa-shopping-basket"></i> Seções</h6>
                     <li class="nav-item col-md-8 col-sm-3 col-3" id="fotoAlimentos"><a href="#">Alimentos</a></li>
                     <li class="nav-item col-md-8 col-sm-3 col-3" id="fotoBebidas"><a class="nav-link" href="#">Bebidas</a></li>
                     <li class="nav-item col-md-8 col-sm-3 col-3" id="fotoCarnes"><a class="nav-link" href="#">Carnes/ congelados</a></li>
@@ -136,101 +137,252 @@
                     <li class="nav-item col-md-8 col-sm-3 col-3" id="fotoUtilidades"><a class="nav-link" href="#">Utilidades</a></li>
                 </ul>
             </div>
-            <!--<div class="col-12 col-sm-3 col-lg-2 nav flex-column bg-gradient-purple-dark my-2 text-center" id="nav-menu-lateral">
-                <ul>
-                    <h6 class="mt-2 shadow-lg"><i class="fas fa-shopping-basket"></i> Seções</h6>
-                    <li class="col-2 col-sm-8" id="fotoAlimentos"><a href="#">Alimentos</a></li>
-                    <li class="col-8" id="fotoBebidas"><a href="#">Bebidas</a></li>
-                    <li class="col-8" id="fotoCarnes"><a href="#">Carnes/ congelados</a></li>
-                    <li class="col-8" id="fotoCondimentos"><a href="#">Condimentos</a></li>
-                    <li class="col-8" id="fotoFrios"><a href="#">Frios/ Laticínios</a></li>
-                    <li class="col-8" id="fotoFrutas"><a href="#">Frutas/ Verduras</a></li>
-                    <li class="col-8" id="fotoHigiene"><a href="#">Higiene/ Limpeza</a></li>
-                    <li class="col-8" id="fotoPanificadora"><a href="#">Panificadora</a></li>
-                    <li class="col-8" id="fotoUtilidades"><a href="#">Utilidades</a></li>
-                </ul>
-            </div>  -->
 
-            <!----------------- cards -------------------->
-            <!--<div id="cards" class="justify-content-sm-center col-12 col-sm-5 col-lg-8">
-                <div class="col-md-6 col-xl-4">
-                    <div class="card mb-5">
-                        <div class="card-body">
-                            <h4 class="card-title my-0 text-center">Abbadon</h4>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
-                            </li>
-                            <li class="list-group-item">
-                                <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
-                                <p class="card-text">Todos os membros da Casta crescem acreditando que são os grandes protetores das tradições da sua linhagem e dos costumes do reino - mas o que eles estão mesmo a proteger é a própria Fonte. E os objetivos da neblina negra são incertos.</p>
-
-                            </li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
-                            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
-                            <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
-                        </div>
-                        <div class="card-footer">
-                            <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card mb-5">
-                        <div class="card-body">
-                            <h4 class="card-title my-0 text-center">Abbadon</h4>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
-                            </li>
-                            <li class="list-group-item">
-                                <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
-                                <p class="card-text">Cada recém-nascido da cavernosa Casta de Avernus é banhado na neblina negra, e através deste batismo ele passa a ter uma ligação inata com as energias místicas da terra.</p>
-
-                            </li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
-                            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
-                            <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
-                        </div>
-                        <div class="card-footer">
-                            <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card mb-5">
-                        <div class="card-body">
-                            <h4 class="card-title my-0 text-center">Abbadon</h4>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
-                            </li>
-                            <li class="list-group-item">
-                                <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
-                                <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de onde vapores de energia profética se têm emanado durante gerações. </p>
-                            </li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
-                            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
-                            <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
-                        </div>
-                        <div class="card-footer">
-                            <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
+    </div>------->
+
+    <div class="row mx-5 my-4 justify-content-sm-center">
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="node_modules/imgs/cardAbbadon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Abbadon</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
+                        <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de..</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
+                    <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
+                </div>
+                <div class="card-footer">
+                    <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="node_modules/imgs/cardAbbadon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Abbadon</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
+                        <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de..</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
+                    <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
+                </div>
+                <div class="card-footer">
+                    <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="node_modules/imgs/cardAbbadon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Abbadon</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
+                        <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de..</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
+                    <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
+                </div>
+                <div class="card-footer">
+                    <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="node_modules/imgs/cardAbbadon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Abbadon</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
+                        <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de..</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
+                    <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
+                </div>
+                <div class="card-footer">
+                    <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="node_modules/imgs/cardAbbadon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Abbadon</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
+                        <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de..</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
+                    <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
+                </div>
+                <div class="card-footer">
+                    <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="node_modules/imgs/cardAbbadon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Abbadon</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
+                        <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de..</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
+                    <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
+                </div>
+                <div class="card-footer">
+                    <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="node_modules/imgs/cardAbbadon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Abbadon</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
+                        <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de..</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
+                    <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
+                </div>
+                <div class="card-footer">
+                    <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="node_modules/imgs/cardAbbadon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Abbadon</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
+                        <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de..</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
+                    <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
+                </div>
+                <div class="card-footer">
+                    <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!----------------- rodapé -------------------->
+    <div class="row mx-5">
+        <div class="col-12 mb-3"><hr></div>
+        <div class="col-md-4">
+            <h3>Curso</h3>
+            <p>Pellentesque faucibus urna vitae eros ultricies, eu rutrum massa rhoncus. Morbi eleifend, lacus a scelerisque mollis, ipsum nunc gravida enim, sed porta ligula mi non nisl. In interdum lorem at nunc scelerisque hendrerit. </p>
+            <p>Etiam tincidunt aliquet tincidunt. Suspendisse nec accumsan turpis. Pellentesque porta lorem ornare eros eleifend semper. Praesent nulla diam, varius vitae suscipit et, egestas ac metus.</p>
+        </div>
+
+        <div class="col-md-4">
+            <h3>Menu</h3>
+            <div class="list-group text-center">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Perfil</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Serviços</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Depoimentos</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Contatos</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <h3>Social</h3>
+            <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                <a class="btn btn-outline-primary" href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a class="btn btn-outline-info" href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a class="btn btn-outline-primary" href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a class="btn btn-outline-dark" href="#"><i class="fab fa-linkedin"></i> GitHub</a>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <hr>
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalmente envolvido em seu trabalho.</p>
+                <footer class="blockquote-footer">Biz Stone <cite title="Source Title"> Fundador do Twitter</cite></footer>
+            </blockquote>
+        </div>
+
+    </div>
     </div>
 
 
