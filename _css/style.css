@@ -23,7 +23,13 @@
 	position: absolute;
 }
 
-.footer-texto {
+.footer-informacoes-texto {
+	color: #fff;
+	width: 600px;
+	height: -500px;
+}
+
+.footer-direitos-texto {
 	color: #fff;
 }
 
