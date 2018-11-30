@@ -1,60 +1,277 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Tudo sobre Google Glass</title>
-    <link rel="stylesheet" href="_css/estilo.css"/>
-    <link rel="stylesheet" href="_css/specs.css"/>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <link rel="stylesheet" href="../_css/menu-lateral.css">
+    <link rel="stylesheet" href="../_css/style.css">
+    <link rel="stylesheet" href="../_css/bundle.css">
+    <link rel="stylesheet" href="../_css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Produtos</title>
 </head>
-<script language="JavaScript" src="_javascript/funcoes.js"></script>
 <body>
-<div id="interface">
-    <header id="cabecalho">
-        <h1>Google Glass</h1>
-        <h2>A revolução do Google está chegando</h2>
+<!----------------- nav menu -------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-purple-dark">
 
-        <img id="icone" src="_imagens/especificacoes.png">
+        <div class="container">
+            <a class="navbar-brand h1 mb-0" href="#">Mercado Eletrônico</a>
 
-        <nav id="menu">
-            <h1>Menu Principal</h1>
-            <ul type="disc">
-                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="index.html">Home</a></li>
-                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
-                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
-                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="multimidia.html">Multimídia</a></li>
-                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
-            </ul>
-        </nav>
-    </header>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<section id="corpo-full">
-    <article id="noticia-principal">
-        <header id="cabecalho-artigo">
-            <h3>Glass > Especificações</h3>
-            <h1>Raio-X no Google Glass</h1>
-            <h2>por Gustavo Guanabara</h2>
-            <h3 class="direita">Atualizado em 01/Maio/2013</h3>
-        </header>
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#">Promoções</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                            Departamentos
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Açougue</a>
+                            <a class="dropdown-item" href="#">Aguá</a>
+                            <a class="dropdown-item" href="#">Alimentos Básicos</a>
+                            <a class="dropdown-item" href="#">Bebidas Destiladas</a>
+                            <a class="dropdown-item" href="#">Cereais</a>
+                            <a class="dropdown-item" href="#">Cervejas</a>
+                            <a class="dropdown-item" href="#">Doces</a>
+                            <a class="dropdown-item" href="#">Energéticos e Batidas</a>
+                            <a class="dropdown-item" href="#">Enlatados</a>
+                            <a class="dropdown-item" href="#">Frios</a>
+                            <a class="dropdown-item" href="#">Frutas</a>
+                            <a class="dropdown-item" href="#">Laticínios</a>
+                            <a class="dropdown-item" href="#">Limpeza e Higiene</a>
+                            <a class="dropdown-item" href="#">Panificadora</a>
+                            <a class="dropdown-item" href="#">Perfumaria</a>
+                            <a class="dropdown-item" href="#">Refrigerantes</a>
+                            <a class="dropdown-item" href="#">Salgadinhos</a>
+                            <a class="dropdown-item" href="#">Sorvetes e Açaí</a>
+                            <a class="dropdown-item" href="#">Utilitários</a>
+                            <a class="dropdown-item" href="#">Verduras e Legumes</a>
+                            <a class="dropdown-item" href="#">Vinhos e Champanhe</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
 
-        <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDropSocial">
+                            Social
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Facebook</a>
+                            <a class="dropdown-item" href="#">Twitter</a>
+                            <a class="dropdown-item" href="#">Instagram</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <section id="conteudo">
-            <img src="../_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"/>
-            <map name="meumapa">
-                <area shape="poly" coords="182,218,266,207,268,244,185,257" href="description.html#tela" target="janela"/>
-                <area shape="circle" coords="158,244,11" href="description.html#camera" target="janela"/>
-                <area shape="circle" coords="77,52,10" href="description.html#gadgets" target="janela"/>
-                <area shape="poly" coords="27,144,83,218,83,253,27,170" href="description.html#sensores" target="janela"/>
-            </map>
-            <iframe scrolling="no" src="description.html" name="janela" id="frame-spec"></iframe>
-        </section>
-    </article>
-</section>
+    <!----------------- Apresentação -------------------->
+    <div class="container shadow-sm">
+        <div class="row">
+            <div class="col-12 text-center my-3">
+                <img class="animated" src="../_imagens/mercado-eletronico.png" alt="">
+                <p class="animated">Health is not about the weight you lose. But about the life you gain!</p>
+            </div>
 
-    <footer id="rodape">
-        <p>Copyright &copy; 2013 - by Gustavo Guanabara <br/>
-            <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+        </div>
+    </div>
+
+
+    <!---- cards - produtos --->
+    <div class="row">
+        <br>
+        <div class="col text-center shadow-sm">
+            <h1>Produtos x ....................</h1>
+        </div>
+    </div>
+    <div class="row mx-5 my-4 justify-content-sm-center">
+
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="node_modules/imgs/cardAbbadon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Abbadon</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
+                        <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de..</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
+                    <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
+                </div>
+                <div class="card-footer">
+                    <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="node_modules/imgs/cardAbbadon.jpg">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Abbadon</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Melee - Support - Carry - Durable</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">Bio</h5>
+                        <p class="card-text">A Fonte de Avernus é a origem da força de uma família, uma fissura nas rochas primordiais de..</p>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Continuação</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Modal exemplo</a>
+                    <a href="http://www.dota2.com/hero/abaddon/" target="_blank" class="card-link">Saiba mais sobre Abbadon</a>
+                </div>
+                <div class="card-footer">
+                    <a href="http://www.dota2.com/heroes/" target="_blank" class="card-link">Todos os Heróis</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!------------ mapa ------------>
+    <div class="container bg-light">
+        <div class="p-2 row align-items-center justify-content-center">
+            <div class="col-sm-4 col-md-6 text-center">
+                <p class="lead shadow-sm">Clique em qualquer área destacada da imagem para ter mais informações sobre a localização interna dos produtos no mercado.</p>
+                <br>
+                <!--- <img class="img_desc" src="_imagens/mao.png" alt="Mão apontando para a direita"> -->
+            </div>
+
+            <div class="col-sm-8 col-md-6 mb-2" id="mapa-mercado">
+                <img class="mapa-index" src="../_imagens/mapa-mercado.jpg" usemap="#meu-mercado"/>
+                <map name="meu-mercado">
+                    <area shape="rect" coords="1,1,79,71" href="../_html/description.html#Panificadora" alt="Panificadora" target="janela"/>
+                    <area shape="rect" coords="103,3,205,66" href="../_html/description.html#Lanche" alt="Lanche" target="janela"/>
+                    <area shape="rect" coords="235,11,342,40" href="../_html/description.html#Açougue" alt="Açougue" target="janela"/>
+                    <area shape="rect" coords="141,85,208,144" href="../_html/description.html#Cervejas-lata" alt="Cervejas lata" target="janela"/>
+
+                    <area shape="rect" coords="2,316,15,372" href="../_html/description.html#Cervejas-garrafa-e-longneck" alt="Cervejas garrafa e longneck" target="janela"/>
+                    <area shape="rect" coords="2,274,20,311" href="../_html/description.html#Geladeira-cervejas-lata-e-longneck" alt="Geladeira cervejas lata e longneck" target="janela"/>
+                    <area shape="rect" coords="2,212,15,268" href="../_html/description.html#Refrigerantes-litros" alt="Refrigerantes litros" target="janela"/>
+                    <area shape="rect" coords="2,171,20,207" href="../_html/description.html#Geladeira-refrigerantes-e-agua" alt="Geladeira refrigerantes e água" target="janela"/>
+                    <area shape="rect" coords="2,109,15,166" href="../_html/description.html#Refrigerantes-lata-e-agua" alt="Refrigerantes lata e água" target="janela"/>
+
+                    <area shape="rect" coords="82,317,93,370" href="../_html/description.html#Bebidas-destiladas" alt="Bebidas destiladas" target="janela"/>
+                    <area shape="rect" coords="82,214,93,267" href="../_html/description.html#Vinhos-e-Champanhes" alt="Vinhos e Champanhês" target="janela"/>
+                    <area shape="rect" coords="82,110,93,164" href="../_html/description.html#Energeticos-e-Batidas" alt="Energéticos e Batidas" target="janela"/>
+
+                    <area shape="rect" coords="95,317,107,370" href="../_html/description.html#Verduras-e-Legumes" alt="Verduras e Legumes" target="janela"/>
+                    <area shape="rect" coords="95,214,107,267" href="../_html/description.html#Verduras-e-Legumes" alt="Verduras e Legumes" target="janela"/>
+                    <area shape="rect" coords="95,110,107,164" href="../_html/description.html#Laticinios" alt="Laticínios" target="janela"/>
+
+                    <area shape="circle" coords="175,240,26" href="../_html/description.html#Frutas" alt="Frutas" target="janela"/>
+                    <area shape="circle" coords="175,344,26" href="../_html/description.html#Frutas" alt="Frutas" target="janela"/>
+
+                    <area shape="rect" coords="243,315,254,368" href="../_html/description.html#Frios" alt="Frios" target="janela"/>
+                    <area shape="rect" coords="243,212,254,265" href="../_html/description.html#Frios" alt="Frios" target="janela"/>
+                    <area shape="rect" coords="243,108,254,162" href="../_html/description.html#Perfumaria" alt="Perfumaria" target="janela"/>
+
+                    <area shape="rect" coords="257,315,270,368" href="../_html/description.html#Balas-e-doces" alt="Balas e Doces" target="janela"/>
+                    <area shape="rect" coords="257,212,270,265" href="../_html/description.html#Enlatados" alt="Enlatados" target="janela"/>
+                    <area shape="rect" coords="257,108,270,162" href="../_html/description.html#Limpeza-e-Higiene" alt="Limpeza e Higiene" target="janela"/>
+
+                    <area shape="rect" coords="335,374,348,411" href="../_html/description.html#Sorvetes-e-Açai" alt="Sorvetes-e-Açai" target="janela"/>
+                    <area shape="rect" coords="335,313,348,368" href="../_html/description.html#Cereais" alt="Cereais" target="janela"/>
+                    <area shape="rect" coords="330,270,348,306" href="../_html/description.html#Salgadinhos" alt="Salgadinhos" target="janela"/>
+                    <area shape="rect" coords="335,210,348,264" href="../_html/description.html#Alimentos-Basicos" alt="Alimentos Básicos" target="janela"/>
+                    <area shape="rect" coords="330,170,348,205" href="../_html/description.html#Condimentos" alt="Condimentos" target="janela"/>
+                    <area shape="rect" coords="335,107,348,164" href="../_html/description.html#Alimentos-Basicos" alt="Alimentos Básicos" target="janela"/>
+                    <area shape="rect" coords="330,65,348,102" href="../_html/description.html#Utilitarios-Churrasco-e-Carvao" alt="Utilitários Churrasco e Carvão" target="janela"/>
+
+                    <area shape="rect" coords="16,414,265,455" href="../_html/description.html#Caixas" alt="Caixas" target="janela"/>
+                </map>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col mb-3">
+                <iframe scrolling="no" src="../_html/description.html" name="janela" id="frame-mapa"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!----------------- rodapé -------------------->
+    <footer class="footer-area">
+        <div class="footer-informacoes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget mt-50">
+                            <h3 class="footer-informacoes-texto text-left">Menu</h3>
+                            <ul>
+                                <div class="list-group text-center">
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Início</a>
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Promoções</a>
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Departamentos</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget mt-50">
+                            <h3 class="footer-informacoes-texto text-center">Sobre</h3>
+                            <div class="widget-content">
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget mt-50">
+                            <h3 class="footer-informacoes-texto text-right">Social</h3>
+                            <ul>
+                                <div class="footer-informacoes-texto text-right btn-group-vertical btn-block btn-group" role="group">
+                                    <div class="btn-group-vertical btn-block btn-group " role="group">
+                                        <a class="btn btn-outline-primary" href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                                        <a class="btn btn-outline-info" href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                                        <a class="btn btn-outline-danger" href="#"><i class="fab fa-linkedin"></i> Instagram</a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="footer-direitos text-center">
+                <p class="footer-direitos-texto">Copyright ©  MercadãoEletrônico 2018 . Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
-</div>
+
+    <!-- JQuery first, then Popper.js, then Bootstrap.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 * {
 	box-sizing: border-box;
 }
@@ -26,7 +27,7 @@
 .footer-informacoes-texto {
 	color: #fff;
 	width: 600px;
-	height: -500px;
+	/*height: 500px;*/
 }
 
 .footer-direitos-texto {
