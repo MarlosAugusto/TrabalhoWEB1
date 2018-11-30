@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <link rel="stylesheet" href="../_css/menu-lateral.css">
+    <link rel="stylesheet" href="../_css/style.css">
+    <link rel="stylesheet" href="../_css/bundle.css">
+    <link rel="stylesheet" href="../_css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Trabalho de WEB</title>
+</head>
+<body>
+<!----------------- nav menu -------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-purple-dark">
+
+        <div class="container">
+            <a class="navbar-brand h1 mb-0" href="#">Mercado Eletrônico</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#">Promoções</a>
+                    </li>
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#">Departamentos</a>
+                    </li>
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                            Social
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Facebook</a>
+                            <a class="dropdown-item" href="#">Twitter</a>
+                            <a class="dropdown-item" href="#">Instagram</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!----------------- Apresentação -------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-3">
+                <img class="animated" src="../_imagens/mercado-eletronico.png" alt="">
+                <p class="animated">Health is not about the weight you lose. But about the life you gain!</p>
+            </div>
+
+        </div>
+    </div>
+
+<!----------------- mapa -------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+                <section id="mapa-mercado">
+                    <img src="../_imagens/mapa-mercado.png" usemap="#meu-mercado"/>
+                    <map name="meu-mercado">
+                        <area shape="poly" coords="188,5,188,170,5,170,5,126,146,126,146,5" href="description.html#tela" target="janela"/>
+                        <area shape="circle" coords="158,244,11" href="description.html#camera" target="janela"/>
+                        <area shape="circle" coords="77,52,10" href="description.html#gadgets" target="janela"/>
+                        <area shape="poly" coords="27,144,83,218,83,253,27,170" href="description.html#sensores" target="janela"/>
+                    </map>
+                    <iframe scrolling="no" src="description.html" name="janela" id="frame-spec"></iframe>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!----------------- rodapé -------------------->
+    <footer class="footer-area fruits-footer">
+        <div class="food-footer-bottom pt-80 pb-70 black-bg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget mt-50">
+                            <h3 class="footer-widget-title-6">Menu</h3>
+                            <ul>
+                                <div class="list-group text-center">
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Início</a>
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Promoções</a>
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Departamentos</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget mt-50">
+                            <h3 class="footer-widget-title-6">Sobre</h3>
+                            <div class="food-widget-content">
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget mt-50">
+                            <h3 class="footer-widget-title-6">Social</h3>
+                            <ul>
+                                <div class="btn-group-vertical btn-block btn-group" role="group">
+                                    <a class="btn btn-outline-primary" href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                                    <a class="btn btn-outline-info" href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                                    <a class="btn btn-outline-danger" href="#"><i class="fab fa-linkedin"></i> Instagram</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="food-copyright black-bg-6 ptb-30">
+            <div class="container text-center">
+                <p>Copyright © <a href="https://hastech.company/"> MercadãoEletrônico</a> 2018 . Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JQuery first, then Popper.js, then Bootstrap.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
