@@ -17,6 +17,30 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <title>Trabalho de WEB</title>
+
+    <script>
+        function incrementaValor(valorMaximo){
+            var value = parseInt(document.getElementById('resultado').value,10);
+            value = isNaN(value) ? 0 : value;
+            if(value >= valorMaximo) {
+                value = valorMaximo;
+            }else{
+                value++;
+            }
+            document.getElementById('resultado').value = value;
+        }
+ 
+        function decrementaValor(valorMinimo){
+            var value = parseInt(document.getElementById('resultado').value,10);
+            value = isNaN(value) ? 0 : value;
+            if(value <= valorMinimo) {
+                value = 0;
+            }else{
+                value--;
+            }
+            document.getElementById('resultado').value = value;
+        }
+    </script>
 </head>
 <body>
 <!----------------- nav menu -------------------->
@@ -85,7 +109,7 @@
 
     <!----------------- Apresentação -------------------->
     <div class="container">
-        <div class="row">
+        <div class="row">   
             <div class="col-12 text-center my-3">
                 <img class="animated" src="_imagens/mercado-eletronico.png" alt="">
                 <p class="animated">Veja as melhores ofertas e verifique a localização dos produtos sem sair de casa!</p>
@@ -185,9 +209,9 @@
                 </div>
                 <div class="card-footer">
 <div class="produto">
-    <input type="text" class="quantidade" maxlength="2" value="1">
-    <button class="botao_menos">-</button>
-    <button class="botao_mais">+</button>
+    <input name="resultado" id="resultado" type="text" class="quantidade" maxlength="2" value="1">
+    <button href="#" onclick="decrementaValor(1); return false;" class="botao_menos">-</button>
+    <button href="#" onclick="incrementaValor(100);return false;" class="botao_mais">+</button>
 </div>
                 </div>
             </div>
@@ -212,9 +236,9 @@
                 </div>
                 <div class="card-footer">
 <div class="produto">
-    <input type="text" class="quantidade" maxlength="2" value="1">
-    <button class="botao_menos">-</button>
-    <button class="botao_mais">+</button>
+    <input name="resultado" id="resultado" type="text" class="quantidade" maxlength="2" value="1">
+    <button href="#" onclick="decrementaValor(1); return false;" class="botao_menos">-</button>
+    <button href="#" onclick="incrementaValor(100);return false;" class="botao_mais">+</button>
 </div>
                 </div>
             </div>
@@ -239,9 +263,9 @@
                 </div>
                 <div class="card-footer">
 <div class="produto">
-    <input type="text" class="quantidade" maxlength="2" value="1">
-    <button class="botao_menos">-</button>
-    <button class="botao_mais">+</button>
+    <input name="resultado" id="resultado" type="text" class="quantidade" maxlength="2" value="1">
+    <button href="#" onclick="decrementaValor(1); return false;" class="botao_menos">-</button>
+    <button href="#" onclick="incrementaValor(100);return false;" class="botao_mais">+</button>
 </div>
                 </div>
             </div>
@@ -266,9 +290,9 @@
                 </div>
                 <div class="card-footer">
 <div class="produto">
-    <input type="text" class="quantidade" maxlength="2" value="1">
-    <button class="botao_menos">-</button>
-    <button class="botao_mais">+</button>
+    <input name="resultado" id="resultado" type="text" class="quantidade" maxlength="2" value="1">
+    <button href="#" onclick="decrementaValor(1); return false;" class="botao_menos">-</button>
+    <button href="#" onclick="incrementaValor(100);return false;" class="botao_mais">+</button>
 </div>
                 </div>
             </div>
@@ -293,9 +317,9 @@
                 </div>
                 <div class="card-footer">
 <div class="produto">
-    <input type="text" class="quantidade" maxlength="2" value="1">
-    <button class="botao_menos">-</button>
-    <button class="botao_mais">+</button>
+    <input name="resultado" id="resultado" type="text" class="quantidade" maxlength="2" value="1">
+    <button href="#" onclick="decrementaValor(1); return false;" class="botao_menos">-</button>
+    <button href="#" onclick="incrementaValor(100);return false;" class="botao_mais">+</button>
 </div>
                 </div>
             </div>
@@ -320,9 +344,9 @@
                 </div>
                 <div class="card-footer">
 <div class="produto">
-    <input type="text" class="quantidade" maxlength="2" value="1">
-    <button class="botao_menos">-</button>
-    <button class="botao_mais">+</button>
+    <input name="resultado" id="resultado" type="text" class="quantidade" maxlength="2" value="1">
+    <button href="#" onclick="decrementaValor(1); return false;" class="botao_menos">-</button>
+    <button href="#" onclick="incrementaValor(100);return false;" class="botao_mais">+</button>
 </div>
                 </div>
             </div>
@@ -347,9 +371,9 @@
                 </div>
                 <div class="card-footer">
 <div class="produto">
-    <input type="text" class="quantidade" maxlength="2" value="1">
-    <button class="botao_menos">-</button>
-    <button class="botao_mais">+</button>
+    <input name="resultado" id="resultado" type="text" class="quantidade" maxlength="2" value="1">
+    <button href="#" onclick="decrementaValor(1); return false;" class="botao_menos">-</button>
+    <button href="#" onclick="incrementaValor(100);return false;" class="botao_mais">+</button>
 </div>
                 </div>
             </div>
@@ -853,5 +877,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="_js/funcoes.js"></script>
 </body>
 </html>
