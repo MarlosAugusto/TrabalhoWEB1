@@ -1,12 +1,12 @@
 #botao{ text-align: center }
 .btn-comprar{
-    width: 350px;
     text-align: center;
-    padding: 3px 52px;
+    padding: 3px 10px;
     border: 1px solid #eee;
     border-radius: 6px;
     background-color: #FCC302;
     font-size: 18px;
+    color: #FFF;
 }
 
 .produto{
