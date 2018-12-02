@@ -89,12 +89,64 @@
     width: 100%;
 }
 
-#frame-mapa {
-    max-width: 800px;
+
+article {
+    margin-bottom: 800px;
+}
+
+/* Formatação de imagens com legendas */
+figure#foto-legenda {
+    position: relative;
+    box-shadow: 1px 1px 4px black;
     height: 300px;
 }
 
-#img-secao {
-    width: 50%;
-    height: auto;
+figure#foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+figure#foto-legenda figcaption {
+    opacity: 0;
+}
+
+
+@media screen and (min-width: 600px) {
+
+
+    figure#foto-legenda figcaption {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, .4);
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: opacity 1s;
+    }
+    figure#foto-legenda:hover figcaption {
+         opacity: 1;
+     }
+
+}
+
+@media screen and (max-width: 599px) {
+
+
+    figure#foto-legenda figcaption {
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, .4);
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    figure#foto-legenda:hover figcaption {
+        opacity: 1;
+    }
+
 }

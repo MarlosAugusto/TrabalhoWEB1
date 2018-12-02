@@ -767,7 +767,7 @@
             <div class="col-sm-8 col-md-6 mb-2" id="mapa-mercado">
                 <img id="mapa-index" src="_imagens/mapa-mercado.jpg" usemap="#meu-mercado"/>
                 <map name="meu-mercado">
-                    <area onclick="mudaFoto('_imagens/mapa-mercado-panificadora.jpg')" shape="rect" coords="1,1,79,71" href="_html/description.html#Panificadora" alt="Panificadora" id="pan" target="janela"/>
+                    <area onclick="mudaFoto('_imagens/mapa-mercado-panificadora.jpg', 'pan')" shape="rect" coords="1,1,79,71" alt="Panificadora" id="pan"/>
                     <area onclick="mudaFoto('_imagens/mapa-mercado-lanche.jpg')" shape="rect" coords="103,3,205,66" href="_html/description.html#Lanche" alt="Lanche" target="janela"/>
                     <area onclick="mudaFoto('_imagens/mapa-mercado-acougue.jpg')" shape="rect" coords="235,11,342,40" href="_html/description.html#Açougue" alt="Açougue" target="janela"/>
                     <area onclick="mudaFoto('_imagens/mapa-mercado-cervejas-lata.jpg')" shape="rect" coords="141,85,208,144" href="_html/description.html#Cervejas-lata" alt="Cervejas lata" target="janela"/>
@@ -812,7 +812,11 @@
 
         <div class="row align-items-center justify-content-center">
             <div class="mb-3">
-                <iframe scrolling="no" src="_html/description.html" name="janela" id="frame-mapa"></iframe>
+               <figure id="foto-legenda">
+                   <img id="img-legenda" src="_imagens/mao.png">
+                   <figcaption class="text-white text-center" id='legenda'><h3 class="add">Google Glass</h3><p class="add">Uma nova maneira de ver o mundo.</p></figcaption>
+               </figure>
+
             </div>
         </div>
     </div>
