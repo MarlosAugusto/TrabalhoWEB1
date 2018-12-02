@@ -90,7 +90,7 @@
 }
 
 #frame-mapa {
-    width: 100%;
+    max-width: 800px;
     height: 300px;
 }
 
