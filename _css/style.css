@@ -110,7 +110,7 @@ figure#foto-legenda figcaption {
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
 
 
     figure#foto-legenda figcaption {
@@ -131,7 +131,7 @@ figure#foto-legenda figcaption {
 
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
 
 
     figure#foto-legenda figcaption {

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../_imagens/favicon.png">
+
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <link rel="stylesheet" href="../_css/style.css">
+    <link rel="stylesheet" href="../_css/bundle.css">
+    <link rel="stylesheet" href="../_css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Mercado eletronico - Cereais</title>
+
+
+    <!-- <script language="JavaScript" href="../_js/funcoes.js" ></script>  -->
+</head>
+<body>
+    <!----------------- nav menu -------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-purple-dark">
+
+        <div class="container">
+            <a class="navbar-brand h1 mb-0" href="../index.html">Mercado Eletrônico</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#">Promoções</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">
+                            Departamentos
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="acougue.html">Açougue</a>
+                            <a class="dropdown-item" href="alimentos.html">Alimentos Básicos</a>
+                            <a class="dropdown-item" href="bebidas.html">Bebidas</a>
+                            <a class="dropdown-item" href="cereais.html">Cereais</a>
+                            <a class="dropdown-item" href="doces.html">Doces</a>
+                            <a class="dropdown-item" href="enlatados.html">Enlatados</a>
+                            <a class="dropdown-item" href="frios.html">Frios</a>
+                            <a class="dropdown-item" href="frutas.html">Frutas</a>
+                            <a class="dropdown-item" href="laticinios.html">Laticínios</a>
+                            <a class="dropdown-item" href="limpeza.html">Limpeza e Higiene</a>
+                            <a class="dropdown-item" href="panificadora.html">Panificadora</a>
+                            <a class="dropdown-item" href="perfumaria.html">Perfumaria</a>
+                            <a class="dropdown-item" href="salgadinhos.html">Salgadinhos</a>
+                            <a class="dropdown-item" href="sorvetes.html">Sorvetes e Açaí</a>
+                            <a class="dropdown-item" href="utilitarios.html">Utilitários</a>
+                            <a class="dropdown-item" href="verduras.html">Verduras e Legumes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDropSocial">
+                            Social
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Facebook</a>
+                            <a class="dropdown-item" href="#">Twitter</a>
+                            <a class="dropdown-item" href="#">Instagram</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------- Apresentação -------------------->
+    <div class="container shadow-sm">
+        <div class="row">
+            <div class="col-12 text-center my-3">
+                <img class="animated" src="../_imagens/mercado-eletronico.png" alt="logo Mercado eletrônico">
+                <p class="animated">Veja as melhores ofertas e verifique a localização dos produtos sem sair de casa!</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!---- cards - produtos --->
+    <div class="row">
+        <br>
+        <div class="col text-center shadow-sm">
+            <h1>Águas</h1>
+        </div>
+    </div>
+    <div class="row mx-5 my-4 justify-content-sm-center">
+
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="../_imagens/acougue_bisteca_suina.png">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Bisteca de porco</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Sem marca</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">R$ 7,66</h5>
+                        <p class="card-text justify-content-center">Bisteca Suina Carre Congelada 700g Bandeja</p>
+                    </li>
+                </ul>
+                <div class="botao text-center my-1">
+                    <a class="btn-comprar" href="#">Comprar</a>
+                </div>
+                <div class="card-footer">
+                    <div class="produto">
+                        <input name="resultado" id="prod19" type="text" class="quantidade" maxlength="2" value="1">
+                        <button href="#" onclick="decrementaValor(1, 'prod19'); return false;" class="botao_menos">-</button>
+                        <button href="#" onclick="incrementaValor(100, 'prod19');return false;" class="botao_mais">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+            <div class="card">
+                <img class="card-img-top" src="../_imagens/acougue_bisteca_suina.png">
+                <div class="card-body">
+                    <h4 class="card-title my-0 text-center">Bisteca de porco</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h6 class="card-subtitle text-center text-muted">Sem marca</h6>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="card-subtitle text-center bg-gradient-dark text-light">R$ 7,66</h5>
+                        <p class="card-text justify-content-center">Bisteca Suina Carre Congelada 700g Bandeja</p>
+                    </li>
+                </ul>
+                <div class="botao text-center my-1">
+                    <a class="btn-comprar" href="#">Comprar</a>
+                </div>
+                <div class="card-footer">
+                    <div class="produto">
+                        <input name="resultado" id="prod21" type="text" class="quantidade" maxlength="2" value="1">
+                        <button href="#" onclick="decrementaValor(1, 'prod21'); return false;" class="botao_menos">-</button>
+                        <button href="#" onclick="incrementaValor(100, 'prod21');return false;" class="botao_mais">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!------------ mapa ------------>
+    <div class="container bg-light">
+        <div class="p-2 row align-items-center justify-content-center">
+            <div id="div-desc" class="col-sm-4 col-md-6 text-center">
+                <p class="lead shadow-sm">Clique em qualquer área destacada do mapa para ter mais informações sobre a localização interna dos produtos no mercado.</p>
+                <br>
+            </div>
+
+            <div class="col-sm-8 col-md-6 mb-2" id="mapa-mercado">
+                <img id="mapa-index" src="../_imagens/mapa-mercado-acougue.jpg" usemap="#meu-mercado"/>
+                <map name="meu-mercado">
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-panificadora.jpg', 'pan')" shape="rect" coords="1,1,79,71" alt="Panificadora" id="pan"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-lanche.jpg', 'lanc')" shape="rect" coords="103,3,205,66" alt="Lanche" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-acougue.jpg', 'acou')" shape="rect" coords="235,11,342,40" alt="Açougue" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-cervejas-lata.jpg', 'cela')" shape="rect" coords="141,85,208,144" alt="Cervejas lata" target="janela"/>
+
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-cervejas-garrafa-e-longneck.jpg', 'cglo')" shape="rect" coords="2,316,15,372" alt="Cervejas garrafa e longneck" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-geladeira-cervejas.jpg', 'gece')" shape="rect" coords="2,274,20,311" alt="Geladeira cervejas lata e longneck" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-refrigerantes-litros.jpg', 'reli')" shape="rect" coords="2,212,15,268" alt="Refrigerantes litros" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-geladeira-refrigerantes-e-agua.jpg', 'grag')" shape="rect" coords="2,171,20,207" alt="Geladeira refrigerantes e água" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-refrigerantes-lata-e-agua.jpg', 'rlag')" shape="rect" coords="2,109,15,166" alt="Refrigerantes lata e água" target="janela"/>
+
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-bebidas-destiladas.jpg', 'bede')" shape="rect" coords="82,317,93,370" alt="Bebidas destiladas" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-vinhos-e-champanhes.jpg', 'vinh')" shape="rect" coords="82,214,93,267" alt="Vinhos e Champanhes" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-energeticos-e-batidas.jpg', 'ener')" shape="rect" coords="82,110,93,164"  alt="Energéticos e Batidas" target="janela"/>
+
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-verduras-e-legumes-bot.jpg', 'verd')" shape="rect" coords="95,317,107,370" alt="Verduras e Legumes" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-verduras-e-legumes-sup.jpg', 'verd')" shape="rect" coords="95,214,107,267" alt="Verduras e Legumes" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-laticinios.jpg', 'lati')" shape="rect" coords="95,110,107,164"  alt="Laticínios" target="janela"/>
+
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frutas-sup.jpg', 'frut')" shape="circle" coords="175,240,26" alt="Frutas" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frutas-bot.jpg', 'frut')" shape="circle" coords="175,344,26" alt="Frutas" target="janela"/>
+
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frios-bot.jpg', 'frio')" shape="rect" coords="243,315,254,368" alt="Frios" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frios-sup.jpg', 'frio')" shape="rect" coords="243,212,254,265" alt="Frios" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-perfumaria.jpg', 'perf')" shape="rect" coords="243,108,254,162" alt="Perfumaria" target="janela"/>
+
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-balas-e-doces.jpg', 'bala')" shape="rect" coords="257,315,270,368" alt="Balas e Doces" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-enlatados.jpg', 'enla')" shape="rect" coords="257,212,270,265" alt="Enlatados" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-limpeza-e-higiene.jpg', 'limp')" shape="rect" coords="257,108,270,162" alt="Limpeza e Higiene" target="janela"/>
+
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-sorvetes-e-acai.jpg', 'sorv')" shape="rect" coords="335,374,348,411" alt="Sorvetes-e-Açai" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-cereais.jpg', 'cere')" shape="rect" coords="335,313,348,368" alt="Cereais" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-salgadinhos.jpg', 'salg')" shape="rect" coords="330,270,348,306" alt="Salgadinhos" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-alimentos-basicos-bot.jpg', 'alim')" shape="rect" coords="335,210,348,264" alt="Alimentos Básicos" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-condimentos.jpg', 'cond')" shape="rect" coords="330,170,348,205" alt="Condimentos" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-alimentos-basicos-sup.jpg', 'alim')" shape="rect" coords="335,107,348,164" alt="Alimentos Básicos" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-utilitarios-churrasco-e-carvao.jpg', 'ucc')" shape="rect" coords="330,65,348,102" alt="Utilitários Churrasco e Carvão" target="janela"/>
+
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-caixas.jpg', 'caix')" shape="rect" coords="16,414,265,455" alt="Caixas" target="janela"/>
+                </map>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="mb-3">
+                <figure id="foto-legenda">
+                    <img id="img-legenda" src="https://scontent.ffbe1-1.fna.fbcdn.net/v/t31.0-8/14939487_1130022280379808_3178359524106815583_o.jpg?_nc_cat=105&_nc_ht=scontent.ffbe1-1.fna&oh=a166b5b72db9301f20bc39420eff6e13&oe=5CB204FD">
+                    <figcaption class="text-white text-center" id='legenda'><h3 class="add my-4">Açougue</h3><p class="add lead">Pussuimos uma grande variedade em cortes de carne com um ótimo preço!.</p></figcaption>
+                </figure>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!----------------- rodapé -------------------->
+    <footer class="footer-area">
+        <div class="footer-informacoes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget mt-50">
+                            <h3 class="footer-informacoes-texto text-left">Menu</h3>
+                            <ul>
+                                <div class="list-group text-center">
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Início</a>
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Promoções</a>
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Departamentos</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget mt-50">
+                            <h3 class="footer-informacoes-texto text-center">Sobre</h3>
+                            <div class="widget-content">
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget mt-50">
+                            <h3 class="footer-informacoes-texto text-right">Social</h3>
+                            <ul>
+                                <div class="footer-informacoes-texto text-right btn-group-vertical btn-block btn-group" role="group">
+                                    <div class="btn-group-vertical btn-block btn-group " role="group">
+                                        <a class="btn btn-outline-primary" href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                                        <a class="btn btn-outline-info" href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                                        <a class="btn btn-outline-danger" href="#"><i class="fab fa-linkedin"></i> Instagram</a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="footer-direitos text-center">
+                <p class="footer-direitos-texto">Copyright ©  MercadãoEletrônico 2018 . Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery first, then Popper.js, then Bootstrap.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../_js/funcoes.js"></script>
+</body>
+</html>
