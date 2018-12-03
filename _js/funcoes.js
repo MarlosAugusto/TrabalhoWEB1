@@ -38,7 +38,7 @@ function mudaFoto(foto, id) {
     $( ".add" ).remove();
     if (id === 'pan') {
         img = "http://pensenegocios.com.br/wp-content/uploads/2017/05/vendo-mercado-e-padaria.jpg"
-        legenda = "<h3 class='add my-4'>Panificadora</h3><p class='add lead'>Venha conhecer nossa maravilhosa panificadora!</p>"
+        legenda = "<h3 class='add my-4'>Panificadora</h3><p class='add lead'>Venha conhecer nossa maravilhosa panificadora!</p><p class='add lead'>Deliciosas massas, bolos e lanches para você!</p>"
     } else if (id === 'lanc') {
         img = "https://img.elo7.com.br/product/zoom/22B55A2/placa-mdf-decorativa-hamburguer-pao-lanche-hamburgueria-decoracao-para-pizzaria.jpg"
         legenda = "<h3 class='add my-4'>Espaço para Lanches</h3><p class='add lead'>Contamos com um espaço especial para fazer o seu Lanche a vontade!</p>"
@@ -126,17 +126,26 @@ function mudaFoto(foto, id) {
 //frame
 
 $(document).ready(function() {
-    if (window.innerWidth < 600) {
-        document.getElementById("foto-legenda").style.width= '395px'
+    if (window.innerWidth < 601) {
+        document.getElementById("foto-legenda").style.width = '395px'
+        if (window.innerWidth < 500) {
+            document.getElementById("mapa-index").style.marginLeft = '5%'
+        }
     } else {
         document.getElementById("foto-legenda").style.width = '595px'
+        $("#div-desc").append("<br class='p-desc'><p class='p-desc lead shadow-sm'>Passe o mouse sobre a imagem abaixo para mais detalhes!</p>")
     }
 })
 
 window.addEventListener('resize', function(){
-    if (window.innerWidth < 600) {
+    $(".p-desc").remove();
+    if (window.innerWidth < 601) {
         document.getElementById("foto-legenda").style.width= '395px'
+        if (window.innerWidth < 500) {
+            document.getElementById("mapa-index").style.marginLeft = '5%'
+        }
     } else {
         document.getElementById("foto-legenda").style.width = '595px'
+        $("#div-desc").append("<br class='p-desc'><p class='p-desc lead shadow-sm'>Passe o mouse sobre a imagem abaixo para mais detalhes!</p>")
     }
 })
