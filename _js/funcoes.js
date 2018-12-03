@@ -98,7 +98,7 @@ function mudaFoto(foto, id) {
         legenda = "<h3 class='add my-4'>Limpeza e Higiene</h3><p class='add lead'>Encontre o que procura em materiais de limpeza e higiene!</p>"
     } else if (id === 'sorv') {
         img = "http://www.citynow.it/assets/uploads/2017/02/gelato.jpg"
-        legenda = "<h3 class='add my-4'>Sorvetes e Áçai</h3><p class='add lead'>Refresque-se com nossos produtos em Sorvetes e Áçais!</p>"
+        legenda = "<h3 class='add my-4'>Sorvetes e Açaí</h3><p class='add lead'>Refresque-se com nossos produtos em Sorvetes e Açaís!</p>"
     } else if (id === 'cere') {
         img = "https://static.noticiasaominuto.com/stockimages/1920/naom_56e55fdbd1894.jpg?1457872905"
         legenda = "<h3 class='add my-4'>Cereais</h3><p class='add lead'>Disponibilizamos uma grande linha de Cereais!</p>"
