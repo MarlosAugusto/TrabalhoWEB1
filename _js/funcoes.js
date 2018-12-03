@@ -65,7 +65,7 @@ function mudaFoto(foto, id) {
         legenda = "<h3 class='add my-4'>Refrigerantes Lata e Água</h3><p class='add lead'>Possuimos muitas opções em refrigerantes lata e águas!</p>"
     } else if (id === 'bede') {
         img = "http://buteconosso.com/wp-content/uploads/2014/12/AVC.jpg"
-        legenda = "<h3 class='add my-4'>Bebidas Destiladas</h3><p class='add lead'>Contamos com uma grande variedade em bebidas destiladas!</p>"
+        legenda = "<h3 class='add my-4'>Bebidas Destiladas</h3><p class='add lead'>Contamos com uma grande variedade de bebidas destiladas!</p>"
     } else if (id === 'vinh') {
         img = "https://scontent.ffbe1-1.fna.fbcdn.net/v/t31.0-8/13340284_1014527248595979_5023675778498577075_o.jpg?_nc_cat=110&_nc_ht=scontent.ffbe1-1.fna&oh=fede579f5e370dbf892dfad2f7048032&oe=5C9B8EAC"
         legenda = "<h3 class='add my-4'>Vinhos e Champanhes</h3><p class='add lead'>Muitas opções em Vinhos e Champanhes para você!</p>"
