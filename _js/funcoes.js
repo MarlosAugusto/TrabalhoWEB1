@@ -126,6 +126,7 @@ function mudaFoto(foto, id) {
 //frame
 
 $(document).ready(function() {
+    $(".p-desc").remove();
     if (window.innerWidth < 601) {
         document.getElementById("foto-legenda").style.width = '395px'
         if (window.innerWidth < 500) {
