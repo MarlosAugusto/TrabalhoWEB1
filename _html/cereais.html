@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
 
@@ -10,14 +11,17 @@
     <link rel="stylesheet" href="../_css/style.css">
     <link rel="stylesheet" href="../_css/bundle.css">
     <link rel="stylesheet" href="../_css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
     <title>Mercado eletronico - Cereais</title>
 
 
     <!-- <script language="JavaScript" href="../_js/funcoes.js" ></script>  -->
 </head>
+
 <body>
     <!----------------- nav menu -------------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-purple-dark">
@@ -58,7 +62,8 @@
                         </div>
                     </li>
                     <li class="nav-item mx-lg-3">
-                        <a class="nav-link" href="https://drive.google.com/open?id=125evwppHLRQwuFtCcg-u7-4Abx4TOMqtZDsD8jHYLe4" target="_blank">Sobre</a>
+                        <a class="nav-link" href="https://drive.google.com/open?id=125evwppHLRQwuFtCcg-u7-4Abx4TOMqtZDsD8jHYLe4"
+                            target="_blank">Sobre</a>
                     </li>
                 </ul>
 
@@ -99,7 +104,7 @@
     </div>
     <div class="row mx-5 my-4 justify-content-sm-center">
 
-         <div class="col-sm-4 col-md-3 col-xl-2 my-2">
+        <div class="col-sm-4 col-md-3 col-xl-2 my-2">
             <div class="card">
                 <img class="card-img-top" src="../_imagens/cereais_milho_verde_lata.png">
                 <div class="card-body">
@@ -119,9 +124,9 @@
                 </div>
                 <div class="card-footer">
                     <div class="produto">
-                        <input name="resultado" id="prod6" type="text" class="quantidade" maxlength="2" value="1">
-                        <button href="#" onclick="decrementaValor(1, 'prod6'); return false;" class="botao_menos">-</button>
-                        <button href="#" onclick="incrementaValor(100, 'prod6');return false;" class="botao_mais">+</button>
+                        <label><input name="resultado" id="prod1" type="text" class="quantidade" maxlength="2" value="1">
+                            <button href="#" onclick="decrementaValor(1, 'prod1'); return false;" class="botao_menos">-</button>
+                            <button href="#" onclick="incrementaValor(100, 'prod1');return false;" class="botao_mais">+</button></label>
                     </div>
                 </div>
             </div>
@@ -132,52 +137,84 @@
     <div class="container bg-light">
         <div class="p-2 row align-items-center justify-content-center">
             <div id="div-desc" class="col-sm-4 col-md-6 text-center">
-                <p class="lead shadow-sm">Clique em qualquer área destacada do mapa para ter mais informações sobre a localização interna dos produtos no mercado.</p>
+                <p class="lead shadow-sm">Clique em qualquer área destacada do mapa para ter mais informações sobre a
+                    localização interna dos produtos no mercado.</p>
                 <br>
             </div>
 
             <div class="col-sm-8 col-md-6 mb-2" id="mapa-mercado">
-                <img id="mapa-index" src="../_imagens/mapa-mercado-cereais.jpg" usemap="#meu-mercado"/>
+                <img id="mapa-index" src="../_imagens/mapa-mercado-cereais.jpg" usemap="#meu-mercado" />
                 <map name="meu-mercado">
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-panificadora.jpg', 'pan')" shape="rect" coords="1,1,79,71" alt="Panificadora" id="pan"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-lanche.jpg', 'lanc')" shape="rect" coords="103,3,205,66" alt="Lanche" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-acougue.jpg', 'acou')" shape="rect" coords="235,11,342,40" alt="Açougue" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-cervejas-lata.jpg', 'cela')" shape="rect" coords="141,85,208,144" alt="Cervejas lata" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-panificadora.jpg', 'pan')" shape="rect" coords="1,1,79,71"
+                        alt="Panificadora" id="pan" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-lanche.jpg', 'lanc')" shape="rect" coords="103,3,205,66"
+                        alt="Lanche" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-acougue.jpg', 'acou')" shape="rect" coords="235,11,342,40"
+                        alt="Açougue" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-cervejas-lata.jpg', 'cela')" shape="rect" coords="141,85,208,144"
+                        alt="Cervejas lata" target="janela" />
 
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-cervejas-garrafa-e-longneck.jpg', 'cglo')" shape="rect" coords="2,316,15,372" alt="Cervejas garrafa e longneck" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-geladeira-cervejas.jpg', 'gece')" shape="rect" coords="2,274,20,311" alt="Geladeira cervejas lata e longneck" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-refrigerantes-litros.jpg', 'reli')" shape="rect" coords="2,212,15,268" alt="Refrigerantes litros" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-geladeira-refrigerantes-e-agua.jpg', 'grag')" shape="rect" coords="2,171,20,207" alt="Geladeira refrigerantes e água" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-refrigerantes-lata-e-agua.jpg', 'rlag')" shape="rect" coords="2,109,15,166" alt="Refrigerantes lata e água" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-cervejas-garrafa-e-longneck.jpg', 'cglo')" shape="rect"
+                        coords="2,316,15,372" alt="Cervejas garrafa e longneck" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-geladeira-cervejas.jpg', 'gece')" shape="rect"
+                        coords="2,274,20,311" alt="Geladeira cervejas lata e longneck" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-refrigerantes-litros.jpg', 'reli')" shape="rect"
+                        coords="2,212,15,268" alt="Refrigerantes litros" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-geladeira-refrigerantes-e-agua.jpg', 'grag')"
+                        shape="rect" coords="2,171,20,207" alt="Geladeira refrigerantes e água" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-refrigerantes-lata-e-agua.jpg', 'rlag')" shape="rect"
+                        coords="2,109,15,166" alt="Refrigerantes lata e água" target="janela" />
 
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-bebidas-destiladas.jpg', 'bede')" shape="rect" coords="82,317,93,370" alt="Bebidas destiladas" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-vinhos-e-champanhes.jpg', 'vinh')" shape="rect" coords="82,214,93,267" alt="Vinhos e Champanhes" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-energeticos-e-batidas.jpg', 'ener')" shape="rect" coords="82,110,93,164"  alt="Energéticos e Batidas" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-bebidas-destiladas.jpg', 'bede')" shape="rect"
+                        coords="82,317,93,370" alt="Bebidas destiladas" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-vinhos-e-champanhes.jpg', 'vinh')" shape="rect"
+                        coords="82,214,93,267" alt="Vinhos e Champanhes" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-energeticos-e-batidas.jpg', 'ener')" shape="rect"
+                        coords="82,110,93,164" alt="Energéticos e Batidas" target="janela" />
 
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-verduras-e-legumes-bot.jpg', 'verd')" shape="rect" coords="95,317,107,370" alt="Verduras e Legumes" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-verduras-e-legumes-sup.jpg', 'verd')" shape="rect" coords="95,214,107,267" alt="Verduras e Legumes" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-laticinios.jpg', 'lati')" shape="rect" coords="95,110,107,164"  alt="Laticínios" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-verduras-e-legumes-bot.jpg', 'verd')" shape="rect"
+                        coords="95,317,107,370" alt="Verduras e Legumes" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-verduras-e-legumes-sup.jpg', 'verd')" shape="rect"
+                        coords="95,214,107,267" alt="Verduras e Legumes" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-laticinios.jpg', 'lati')" shape="rect" coords="95,110,107,164"
+                        alt="Laticínios" target="janela" />
 
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frutas-sup.jpg', 'frut')" shape="circle" coords="175,240,26" alt="Frutas" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frutas-bot.jpg', 'frut')" shape="circle" coords="175,344,26" alt="Frutas" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frutas-sup.jpg', 'frut')" shape="circle" coords="175,240,26"
+                        alt="Frutas" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frutas-bot.jpg', 'frut')" shape="circle" coords="175,344,26"
+                        alt="Frutas" target="janela" />
 
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frios-bot.jpg', 'frio')" shape="rect" coords="243,315,254,368" alt="Frios" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frios-sup.jpg', 'frio')" shape="rect" coords="243,212,254,265" alt="Frios" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-perfumaria.jpg', 'perf')" shape="rect" coords="243,108,254,162" alt="Perfumaria" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frios-bot.jpg', 'frio')" shape="rect" coords="243,315,254,368"
+                        alt="Frios" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-frios-sup.jpg', 'frio')" shape="rect" coords="243,212,254,265"
+                        alt="Frios" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-perfumaria.jpg', 'perf')" shape="rect" coords="243,108,254,162"
+                        alt="Perfumaria" target="janela" />
 
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-balas-e-doces.jpg', 'bala')" shape="rect" coords="257,315,270,368" alt="Balas e Doces" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-enlatados.jpg', 'enla')" shape="rect" coords="257,212,270,265" alt="Enlatados" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-limpeza-e-higiene.jpg', 'limp')" shape="rect" coords="257,108,270,162" alt="Limpeza e Higiene" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-balas-e-doces.jpg', 'bala')" shape="rect" coords="257,315,270,368"
+                        alt="Balas e Doces" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-enlatados.jpg', 'enla')" shape="rect" coords="257,212,270,265"
+                        alt="Enlatados" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-limpeza-e-higiene.jpg', 'limp')" shape="rect"
+                        coords="257,108,270,162" alt="Limpeza e Higiene" target="janela" />
 
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-sorvetes-e-acai.jpg', 'sorv')" shape="rect" coords="335,374,348,411" alt="Sorvetes-e-Açai" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-cereais.jpg', 'cere')" shape="rect" coords="335,313,348,368" alt="Cereais" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-salgadinhos.jpg', 'salg')" shape="rect" coords="330,270,348,306" alt="Salgadinhos" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-alimentos-basicos-bot.jpg', 'alim')" shape="rect" coords="335,210,348,264" alt="Alimentos Básicos" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-condimentos.jpg', 'cond')" shape="rect" coords="330,170,348,205" alt="Condimentos" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-alimentos-basicos-sup.jpg', 'alim')" shape="rect" coords="335,107,348,164" alt="Alimentos Básicos" target="janela"/>
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-utilitarios-churrasco-e-carvao.jpg', 'ucc')" shape="rect" coords="330,65,348,102" alt="Utilitários Churrasco e Carvão" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-sorvetes-e-acai.jpg', 'sorv')" shape="rect"
+                        coords="335,374,348,411" alt="Sorvetes-e-Açai" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-cereais.jpg', 'cere')" shape="rect" coords="335,313,348,368"
+                        alt="Cereais" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-salgadinhos.jpg', 'salg')" shape="rect" coords="330,270,348,306"
+                        alt="Salgadinhos" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-alimentos-basicos-bot.jpg', 'alim')" shape="rect"
+                        coords="335,210,348,264" alt="Alimentos Básicos" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-condimentos.jpg', 'cond')" shape="rect" coords="330,170,348,205"
+                        alt="Condimentos" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-alimentos-basicos-sup.jpg', 'alim')" shape="rect"
+                        coords="335,107,348,164" alt="Alimentos Básicos" target="janela" />
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-utilitarios-churrasco-e-carvao.jpg', 'ucc')"
+                        shape="rect" coords="330,65,348,102" alt="Utilitários Churrasco e Carvão" target="janela" />
 
-                    <area onclick="mudaFoto('../_imagens/mapa-mercado-caixas.jpg', 'caix')" shape="rect" coords="16,414,265,455" alt="Caixas" target="janela"/>
+                    <area onclick="mudaFoto('../_imagens/mapa-mercado-caixas.jpg', 'caix')" shape="rect" coords="16,414,265,455"
+                        alt="Caixas" target="janela" />
                 </map>
             </div>
         </div>
@@ -186,7 +223,10 @@
             <div class="mb-3">
                 <figure id="foto-legenda">
                     <img id="img-legenda" src="https://static.noticiasaominuto.com/stockimages/1920/naom_56e55fdbd1894.jpg?1457872905">
-                    <figcaption class="text-white text-center" id='legenda'><h3 class="add my-4">Cereais</h3><p class='add lead'>Disponibilizamos uma grande linha de Cereais!</p></figcaption>
+                    <figcaption class="text-white text-center" id='legenda'>
+                        <h3 class="add my-4">Cereais</h3>
+                        <p class='add lead'>Disponibilizamos uma grande linha de Cereais!</p>
+                    </figcaption>
                 </figure>
 
             </div>
@@ -201,20 +241,26 @@
         <div class="row mb-5 mx-5">
             <a href="../index.html" class="button col col-sm-6 col-md-3 text-purple-dark border-purple-dark bg-cinza">Início</a>
             <a href="promocoes.html" class="button col col-sm-6 col-md-3 text-purple-dark border-purple-dark bg-cinza">Promoções</a>
-            <a href="https://drive.google.com/open?id=125evwppHLRQwuFtCcg-u7-4Abx4TOMqtZDsD8jHYLe4" target="_blank" class="button col col-sm-6 col-md-3 text-purple-dark border-purple-dark bg-cinza">Sobre</a>
-            <a href="#" class="button col col-sm-6 col-md-3 text-purple-dark border-purple-dark bg-cinza">Voltar ao topo</a>
+            <a href="https://drive.google.com/open?id=125evwppHLRQwuFtCcg-u7-4Abx4TOMqtZDsD8jHYLe4" target="_blank"
+                class="button col col-sm-6 col-md-3 text-purple-dark border-purple-dark bg-cinza">Sobre</a>
+            <a href="#" class="button col col-sm-6 col-md-3 text-purple-dark border-purple-dark bg-cinza">Voltar ao
+                topo</a>
         </div>
         <div class="row">
             <div class="col footer-direitos text-center pt-3">
-                <p>Copyright ©  MercadãoEletrônico 2018 . Todos os direitos reservados.</p>
+                <p>Copyright © MercadãoEletrônico 2018 . Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <!-- JQuery first, then Popper.js, then Bootstrap.js -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="../_js/funcoes.js"></script>
 </body>
+
 </html>
