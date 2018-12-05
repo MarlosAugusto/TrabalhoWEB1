@@ -136,6 +136,12 @@ $(document).ready(function() {
         document.getElementById("foto-legenda").style.width = '595px'
         $("#div-desc").append("<br class='p-desc'><p class='p-desc lead shadow-sm'>Passe o mouse sobre a imagem abaixo para mais detalhes!</p>")
     }
+
+    if (window.innerWidth > 1480) {
+        document.getElementById("divCarousel").style.paddingLeft = '1.8%'
+    } else {
+        document.getElementById("divCarousel").style.paddingLeft = '0'
+    }
 })
 
 window.addEventListener('resize', function(){
@@ -148,5 +154,11 @@ window.addEventListener('resize', function(){
     } else {
         document.getElementById("foto-legenda").style.width = '595px'
         $("#div-desc").append("<br class='p-desc'><p class='p-desc lead shadow-sm'>Passe o mouse sobre a imagem abaixo para mais detalhes!</p>")
+    }
+
+    if (window.innerWidth > 1480) {
+        document.getElementById("divCarousel").style.paddingLeft = '1.8%'
+    } else {
+        document.getElementById("divCarousel").style.paddingLeft = '0'
     }
 })
